@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.web4uonline.adoration"
+        id        = "com.web4uonline.myadorationpal"
         version   = "1.0.0">
-    <name>MyAdorationPal: Eucharistic</name> 
+    <name>MyAdorationPal</name> 
 
     <description>
-   MyAdorationPal is your companion for Eucharistic Adoraiton.  
+   MyAdorationPal is your companion for Eucharistic Adoraiton in the Catholic Tradition.  
 
 
 </description>
