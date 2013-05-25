@@ -3,6 +3,10 @@
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<meta http-equiv="refresh" content="500" url="http://www.web4uonline.com/adorationapp/15/resources.php"/> 
+
+
 <title>Resources</title>
 
 <!----css----->
@@ -39,12 +43,12 @@ App data is never stored permanently to the phone.</p>
 	<strong>App Store Links</strong></p>
 	<ul>
 		<li>
-		<a href="https://itunes.apple.com/us/app/confession-app-catholic-sacrament/id601823513?mt=8" target="_blank">iTunes</a></li>
+		<a href="https://itunes.apple.com/us/app/confession-app-catholic-sacrament/id601823513?mt=8" target="_parent">iTunes</a></li>
 		<li>
-		<a href="https://play.google.com/store/apps/details?id=com.web4uonline.confession" target="_blank">
+		<a href="https://play.google.com/store/apps/details?id=com.web4uonline.confession" target="_parent">
 		Google Play</a></li>
 		<li>
-		<a href="http://www.amazon.com/Web4u-Corporation-Confession-App-Catholic/dp/B00BHMG6O4/ref=pd_sim_mas_3" target="_blank">
+		<a href="http://www.amazon.com/Web4u-Corporation-Confession-App-Catholic/dp/B00BHMG6O4/ref=pd_sim_mas_3" target="_parent">
 		Amazon App Store</a></li>
 	</ul>
 	

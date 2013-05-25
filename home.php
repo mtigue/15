@@ -24,9 +24,9 @@
 <body style="background:transparent !important;">
 
 
-<div class="box" style="displays:none; background-color:#eeeeee; padding:12px;">
+<div class="box" style="display:none; background-color:#eeeeee; padding:12px;">
 
-<p>Notification Here</p>
+<p>Big Retreat coming up. See <a href="#expo" target="_parent">events page</a></p>
 	
 </div>	
 
