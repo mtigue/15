@@ -37,7 +37,7 @@
     <preference name="splash-screen-duration" value="2000" />
     
     
-    
+    <preference name="OpenAllWhitelistURLsInWebView" value="No" />
     
 
     <icon src="icon.png" />
@@ -84,18 +84,18 @@
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
 
 
-<gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
-<gap:splash src="splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
+<gap:splash src="res/screen/ios/Default.png" gap:platform="ios" width="320" height="480" />
+<gap:splash src="res/screen/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
 
-<gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
+<gap:splash src="res/screen/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
 
 
-<gap:splash src="splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
-<gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+<gap:splash src="res/screen/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
+<gap:splash src="res/screen/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
 
 <!-- retina iPad support: PhoneGap 2.5.0+ only -->
-<gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
-<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+<gap:splash src="res/screen/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+<gap:splash src="res/screen/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
 
 
 
