@@ -4,14 +4,18 @@
 	<title>MyAdorationPal: Catholic</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 	
-	
+<!---child browser---->	
+	<script src="childbrowser.js"></script>
+<!------>
+
 
 
 <!--------------------------------------FOR PUSH------------------------------------->
 	
    <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        
         <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
         <script src="pushwoosh.js" type="text/javascript"></script>
@@ -299,6 +303,14 @@ ackground-repeat:no-repeat center center fixed !important;
 
 <div style="clear:both"></div>
 
+	<script>
+function resources()
+{
+window.open('http://www.web4uonline.com/resources.php', '_external');
+
+ }
+ 
+ </script>
 
 
 		
@@ -324,12 +336,25 @@ ackground-repeat:no-repeat center center fixed !important;
 		
 	<li><a href="#examination" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">Examination of Conscience</a></li>
 	
-	<li><a href="#resources" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More Resources</a></li>
+	<li><a href="" onclick="openS()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More Resources</a></li>
 	
+
 	
 	
 </ul>
 		
+		
+<script>
+function openS()
+{
+window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
+                                        { showLocationBar: false });
+ }
+
+ </script>
+		
+	
+
 	
 		
 	</div><!-- /content -->
@@ -2395,7 +2420,10 @@ window.open('http://web4uonline.com/', '_system');
 </p>
 
 
+<iframe name="2" id="2" style="width:300px; height:300px;">
 
+
+</iframe>
 
 
 

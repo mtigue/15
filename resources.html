@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -28,23 +28,55 @@
 <body style="background:transparent !important;">
 <div class="external">
 
-<script>
-
-function close()
-{
-
-window.plugins.childBrowser.close();
-}
-
-</script>
-
-<button onclick="close()">Close App View</button>
-
-
-
 <div class="box">
 
 <img src="images/confession.png">
+
+
+<script>
+function open_win()
+{
+window.open("http://www.w3schools.com")
+}
+</script>
+
+<script>
+function openWin()
+{
+myWindow=window.open('','','width=200,height=100');
+myWindow.document.write("<p>This is 'myWindow'</p>");
+myWindow.focus();
+}
+</script>
+
+<script>
+function openPG()
+{
+window.open('http://phonegap.com/', '_external');
+
+ }
+ 
+ </script>
+
+<p>
+<a href="http://www.web4uonline.com/" target="_blank">Regular href target blank</a>
+</p>
+<p>
+<a href="http://www.web4uonline.com/" target="_parent">Regular href target parent</a>
+</p>
+<p>
+<a href="http://www.web4uonline.com/" target="">Regular href no target defined</a>
+</p>
+
+
+<p>
+<input type="button" value="open new tab w3" onclick="open_win()">
+</p>
+
+
+<p>
+<button onclick="openPG()">Phone Gap External note</button>
+</p>
 
 
 <h2>Confession App: Catholic</h2>
@@ -56,10 +88,9 @@ major and tough questions to help keep even the most experienced user engaged.
 App data is never stored permanently to the phone.</p>
 	<p>
 	<strong>App Store Links</strong></p>
-	<ul>	
-	
+	<ul>
 		<li>
-		<a type="button" href="https://itunes.apple.com/us/app/confession-app-catholic-sacrament/id601823513?mt=8" target="_parent">iTunes</a></li>
+		<a href="https://itunes.apple.com/us/app/confession-app-catholic-sacrament/id601823513?mt=8" target="_parent">iTunes</a></li>
 		<li>
 		<a href="https://play.google.com/store/apps/details?id=com.web4uonline.confession" target="_parent">Google Play</a></li>
 		

@@ -16,7 +16,7 @@
         Web4u Corporation</author>
 
    
-<
+
 
 
  <feature name="http://api.phonegap.com/1.0/device" />
@@ -109,8 +109,11 @@
 
 <!--old name	<gap:plugin name="PushPlugin"/>   -->
 
+<!---------------plugins--------------------->
 
 	<gap:plugin name="GenericPush"/>
+    <gap:plugin name="ChildBrowser" />
+<!--------------------end plugins---------------->
 
 
 
