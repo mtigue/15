@@ -336,24 +336,43 @@ window.open('http://www.web4uonline.com/resources.php', '_external');
 		
 	<li><a href="#examination" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">Examination of Conscience</a></li>
 	
-	<li><a href="" onclick="openS()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More Resources</a></li>
+	<li><a href="" onclick="openL()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More showLocationBar</a></li>
 	
+	<li><a href="" onclick="openA()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More Address</a></li>
 
-	
+	<li><a href="" onclick="openA()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More NavigationBar</a></li>
+
 	
 </ul>
 		
 		
 <script>
-function openS()
+function openL()
 {
 window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
-                                        { showLocationBar: false });
+                                        { showLocationBar: true });
  }
 
  </script>
 		
-	
+
+<script>
+function openA()
+{
+window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
+                                       { showAddress: true });
+}
+ </script>
+
+
+<script>
+function openN()
+{
+window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
+                                       { showNavigationBar: true });
+}
+ </script>
+
 
 	
 		

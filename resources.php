@@ -25,26 +25,36 @@
 
 </head>
 
-<body style="background:transparent !important;">
+<body style="background:transparent !important; width:95%;">
 <div class="external">
 
 <script>
 
 function close()
 {
-
 window.plugins.childBrowser.close();
 }
+
+function external()
+{
+window.plugins.childBrowser.openExternal('http://www.web4uonline.com');
+}
+
 
 </script>
 
 <button onclick="close()">Close App View</button>
+<br><br>
+<button onclick="external()">Open external out of webview</button>
 
 
 
 <div class="box">
 
 <img src="images/confession.png">
+
+
+
 
 
 <h2>Confession App: Catholic</h2>
