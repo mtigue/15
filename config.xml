@@ -39,13 +39,7 @@
 
 <!-----------------------white list testing-------------------------->    
     
-    <preference name="OpenAllWhitelistURLsInWebView" value="No" />
-     
-     <access origin="http://phonegap.com/" browserOnly="true" />
-    
-    
-   <access origin="http://www.web4uonline.com/" browserOnly="false" />
-    
+    <access origin="*" />    
     
 <!------------------------------------------------------------------>
     <icon src="icon.png" />
