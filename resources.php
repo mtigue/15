@@ -32,6 +32,46 @@
 
 <img src="images/confession.png">
 
+
+<script>
+function open_win()
+{
+window.open("http://www.w3schools.com")
+}
+</script>
+
+<script>
+function openWin()
+{
+myWindow=window.open('','','width=200,height=100');
+myWindow.document.write("<p>This is 'myWindow'</p>");
+myWindow.focus();
+}
+</script>
+
+<script>
+function openPG()
+{
+window.open('http://phonegap.com/', '_system');
+
+ }
+ 
+ </script>
+
+
+<p>
+<input type="button" value="open new tab w3" onclick="open_win()">
+</p>
+
+<p>
+<input type="button" value="Open new pop up window" onclick="openWin()" />
+</p>
+
+<p>
+<button onclick="openPG()">Phone Gap External note</button>
+</p>
+
+
 <h2>Confession App: Catholic</h2>
 <p>
 The Confession App prepares you in a gentle and comforting way for the Catholic sacrament of Confession (Reconciliation). Place a check mark next to items you'd like to confess and they appear in the Confession Guide section for use during Confession. 
@@ -43,11 +83,12 @@ App data is never stored permanently to the phone.</p>
 	<strong>App Store Links</strong></p>
 	<ul>
 		<li>
-		<a href="https://itunes.apple.com/us/app/confession-app-catholic-sacrament/id601823513?mt=8">iTunes</a></li>
+		<a href="https://itunes.apple.com/us/app/confession-app-catholic-sacrament/id601823513?mt=8" target="_parent">iTunes</a></li>
 		<li>
-		<a href="https://play.google.com/store/apps/details?id=com.web4uonline.confession">Google Play</a></li>
+		<a href="https://play.google.com/store/apps/details?id=com.web4uonline.confession" target="_parent">Google Play</a></li>
+		
 		<li>
-		<a href="http://www.amazon.com/Web4u-Corporation-Confession-App-Catholic/dp/B00BHMG6O4/ref=pd_sim_mas_3">Amazon App Store</a></li>
+		<a target="_parent" href="http://www.amazon.com/gp/product/B00BHMG6O4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00BHMG6O4&linkCode=as2&tag=cantici-20">Amazon App Store</a></li>
 	</ul>
 	
 </div>	
