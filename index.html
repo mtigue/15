@@ -252,7 +252,7 @@ ackground-repeat:no-repeat center center fixed !important;
 
 
 	<div data-role="header" data-theme="b">
-		<h1>My Adoration Pal</h1>
+		<h1>MyAdorationPal</h1>
 		
 	</div><!-- /header -->
 
@@ -266,7 +266,7 @@ ackground-repeat:no-repeat center center fixed !important;
 
 
 <div style="position:absolute; bottom:20px; width:90%;">
-<a href="#nav" data-theme="e" data-role="button" data-icon="gear" data-corners="false" data-theme="e">Get Started</a>
+<a href="#nav" data-theme="e" data-role="button" data-prefetch="true" data-icon="gear" data-corners="false" data-theme="e">Get Started</a>
 </div>
 
 
@@ -333,14 +333,9 @@ window.open('http://www.web4uonline.com/resources.php', '_external');
 	
 	<li><a href="#requests" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">Prayer Requests</a></li>
 	
-		
 	<li><a href="#examination" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">Examination of Conscience</a></li>
 	
-	<li><a href="" onclick="openL()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More showLocationBar</a></li>
-	
-	<li><a href="" onclick="openA()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More Address</a></li>
-
-	<li><a href="" onclick="openN()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More NavigationBar</a></li>
+	<li><a href="" onclick="openN()" class="show-page-loading-msg" data-prefetch data-textonly="false" data-textvisible="false" data-msgtext="">More Resources</a></li>
 
 	
 </ul>
@@ -356,6 +351,7 @@ window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp
  </script>
 		
 
+
 <script>
 function openA()
 {
@@ -365,11 +361,13 @@ window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp
  </script>
 
 
+
+
 <script>
 function openN()
 {
 window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
-                                       { showNavigationBar: true });
+                                       { showNavigationBar: true; showAddress: false; showLocationBar: false }    );
 }
  </script>
 
@@ -582,8 +580,8 @@ The Council of Trent also made it clear that Jesus could be worshipped and adore
 <!---------page content here---------------->
 <div data-role="collapsible-set" data-theme="b" data-content-theme="c">
 
-	<div data-role="collapsible" data-theme="b">
-	<h3>Exposition</h3>
+	<div data-role="collapsible" data-theme="c">
+	<h3>About Exposition</h3>
 <p>
 Eucharistic Adoration often begins with what is called "exposition", which refers to "exposing" the Blessed Sacrament so that the host can be seen directly. Often exposistion is accompanied by some prayers and songs. Common exposition songs and prayers appear below. If you are partaking in adoration in which the Eucharist has already been exposed, then the following prayers and songs will not likely be prayed or sung.
 </p>
@@ -837,7 +835,7 @@ Amen.
 
 <div data-role="collapsible-set" data-theme="b" data-content-theme="c">
 
-<div data-role="collapsible" data-theme="b">
+<div data-role="collapsible" data-theme="c">
 <h3>About Reposition</h3>
 <p>As the time for Adoraton ends, a priest or deacon will proceed toward the Eucharist and kneel while the following songs and prayers are said. He will then stand, pick up the monstrance, and bless the people with the Eucharistic Host. This is a poweful blessing as the intention is for Jesus to bless the people directly. After the blessing, also called a benediction, the divine praises are often said or sung. </p>
 
@@ -1618,7 +1616,7 @@ Some school workbook pages offer a "word bank" which lists many possible answers
 	<h3>Timed Praise</h3>
 	<p>
 	
-	You may at some point consider picking a time limit and attempting to give God thanks and praise for the duration of the time limit. 5 or 10 minutes is a good challenge. Many times when we first try to praise for 5 minutes, we find that we run out of steam after just 45 seconds. The challenge of the time helps us to decide and choose to give God praise. Usually after working past the first couple minutes, the Holy Spirit comes to our aid and lifts up our minds and hearts to heaven and makes the praising blessed and blissful. In many cases, you may find yourself forgetting about the clock for 20 minutes or more. Very often after a long period of praise, the Holy Spirit will calm your spirit and invite you to simply listen in the quiet. Many deep insights can come from the Lord in the peaceful and powerful moments after praise. 
+	You may at some point consider picking a time limit and attempting to give God thanks and praise for the duration of the time limit. 5 or 10 minutes is a good challenge. Many times when we first try to praise for 5 minutes, we find that we run out of steam after just 45 seconds. The challenge of the time limit helps us to decide and choose to give God praise. Usually, after staying comitted through the first couple minutes, the Holy Spirit comes to our aid and lifts up our minds and hearts to heaven and makes the praising blessed and blissful. In many cases, you may find yourself forgetting about the time for 20 minutes or more. Very often after a long period of praise, the Holy Spirit will calm your spirit and invite you to simply listen in the quiet. Many deep insights can come from the Lord in the peaceful and powerful moments after praise. 
 	
 	</p>
 </div>
@@ -2010,11 +2008,10 @@ this honor is for all his faithful.
 
 	
 	<p>
-   It is important to know that praying in tongues is not a requirement of being Catholic. However, it is also important to point out that praying in tongues is within the realms of Catholicism. It is not "Non-Catholic" or contrary to the Catholic Faith. It is permissible and can be very helpful to prayer. In many ways MyAdorationPal is a guide to help you pray for a long period of time in front of the Eucharist and so including this addtional and powerful method of prayer seems appropriate.
-   	</p>
+  Praying in tongues is within the realms of Catholicism. It is mentioned in the Catechism, the documents of Vatican II, in the Bible, by the preacher to the Papal Household, and by various Catholic writers and Saints throughought Church history.  However, it is important to point out that praying in tongues is not a requirement of being Catholic. On one extreme, some Christians believe praying in tongues is required for salvation. On the other extreme, some Christians believe tongues should never be utilized. Catholics take a reasonably middle ground, believing that tongues is not required for salvation but that it is a manifestation of the Holy Spirit for the building up of the Church. Like all spiritual gifts, it has is appropriate uses and innapropriate uses. </p>
 	
 <p>
-Of course, the beginning of references to praying in tongues for Christians comes from the account of Pentecost in the Acts of the Apostles. In Acts of the Apostles, the Apostles speak in tongues and everyone else understands in their native language. Many gathered are amazed and some even suggest the Apostles have been drinking. Peter stands up and explains it is early in the morning and no one has been drinking. 
+The beginning of references to praying in tongues for Christians comes from the account of Pentecost in the Acts of the Apostles. In Acts of the Apostles, the Apostles speak in tongues and everyone else understands in their native language. Many gathered are amazed and some even suggest the Apostles have been drinking. Peter stands up and explains it is early in the morning and no one has been drinking. 
 </p>	
 <p>
 In Acts chapter 10, Peter decides that Gentiles can be baptized because when he preaches to the gentiles, the spirit falls on them and they speak in tongues. Based on this experience, Peter decides that Gentiles too can become Christians.
@@ -2058,11 +2055,11 @@ If you think about it, the only reason Paul brings this up is because so many pe
 <p>
 Since St. Paul provided guidelines on praying in tonuges, we'll provide some guidance for you in case you'd like to add praising in tongues to your adoration time. 
 <ul>
-<li>Do not pray out loud in tongues unless everyone else in the room agrees it is time for out loud and prayer.
+<li>Do not pray out loud in tongues unless everyone else in the room agrees it is time for out loud prayer.
 </li>
-<li>Do not pray out loud in tongues unless everyone in the room either is familiar with tongues or is a strong enough member of the community to not leave the community if hearing tongues confuses him/her. Usually a person with a personal relationship with Jesus, even if hearing tongues for the first time, will not have his/her faith altered by hearing tongues. In many cases, the person will ask about what was heard and begin praying in tongues himself at a later time.</li>
+<li>Do not pray out loud in tongues unless everyone in the room is either familiar with tongues or is a strong enough member of the community to not leave the community if hearing tongues confuses them. Take St. Paul's advice and don't confuse new people.</li>
 <li>If it is not time for out loud prayer, consider praying in tongues in a soft whisper if you are far away enough so that know one can hear you.</li>
-<li>If you are still too close to people, you can sometimes allow your tongue to move like you are praying in tongues without making any noise.</li>
+<li>If you are still too close to people, you can try to pray in tongues with your mouth closed so as to make only the softest sounds.</li>
 </ul>
 </p>
 
@@ -2088,7 +2085,7 @@ Prophetic tongues is what Paul references in Corinthians 14 as a message in tong
 
 
 <li><strong>Personal Praise in Tongues:</strong> 
-The individual praying in tongues is not preaching to convert or prophecying to those gathered. Instead, the person praying is simply giving praise to God with a pattern or language of speach that is unkown to the speaker. It may simply be a gift of non-language utterances to God. It could be another early language, and it could be an unknown heavenly language. In any manner, it is usually accompanied with a feeling of praise and thanksgiving and close communion with God. It can often feel as if the Holy Spirit is praising the Father and the Son through the individual who is praying. </li>
+The individual praying in tongues is not preaching to convert or prophecying to those gathered. Instead, it is giving praise to God with a pattern or language of speach that is unkown to the speaker. It may simply be a gift of non-language utterances to God. It could be another early language, and it could be an unknown heavenly language. In any manner, it is usually accompanied with a feeling of praise and thanksgiving and close communion with God. It can often feel as if the Holy Spirit is praising the Father and the Son through you.</li>
 
 </ul>
 
@@ -2112,10 +2109,10 @@ Behold, he giveth as it were the tune of thy song; seek not words as if thou cou
 
 
 <p>
-In Romans 8, St. Paul discusses the Spirit intreceding on our behalf with groanings too deep for human words to understand, but the Father who searches all hearts understands. Personal praise in tongues or "jubilation" as Augustine calls it, is the type of tongues that can be very helpful to you during your time of praise before the Eucharist in Adoration. If you think about it, you are in the presence of the person of Jesus Christ. You have been baptized and have received the Holy Spirit. It is not surprising that the Holy Spirit inside wants to cry out to Jesus in a language or manner that is different or beyond the language your brain knows. Even if tongues is not a "language" as we define language, it still makes sense that the Holy Spirit would desire for to express our adoration for the Son in a manner beyond that of our native tongue. 
+In Romans 8, St. Paul discusses the Spirit intreceding on our behalf with groanings too deep for human words to understand, but the Father who searches all hearts understands. Personal praise in tongues or "jubilation" as Augustine calls it, is the type of tongues that can be very helpful to you during your time of praise before the Eucharist in Adoration. If you think about it, you are in the presence of the person of Jesus Christ. You have been baptized and have received the Holy Spirit. It is not surprising that the Holy Spirit inside wants to cry out to Jesus in a language or manner that is different or beyond the language your brain knows. Even if tongues is not a "language" as we define language, it still makes sense that the Holy Spirit would desire for you to express adoration for the Son in a manner beyond that of you native tongue. 
 </p>
 <p>
-Why do couple's kiss or hold hands? Why don't they just say "I love you". Kissing and holding hands does say I love you, but it says in a different way. Why yell "wooo hooo" when your sports team scores? Why not yell, "I am most excited now". Why say "mmmmmmhhhhhh" when eating a delicious brownie? Why not say, "This brownie is delicious". Why write a poem for a loved one when you could just say what you feel? Why is there a song that says "Zip-A-Dee-Doo-Dah, Zip-A-Dee-Day"? Well, of course the reasons for these expressions and non language utterances is because sometimes English does not suffice. Sometimes we need to step out of or beyond our language to express what we feel. Tongues, or jublition, is in many ways a gift of the Holy Spirit to help our brains and spirits step beyond or outside of our normal language oriented brain and into a realm of expressive thanksgiving.  Because it is a gift and allows us to make this step, it is a wonderful tool for praising God, which noted earlier is "our duty and our salvation".
+Why do couple's kiss or hold hands? Why don't they just say "I love you". Sometimes the love is so great that something beyond words is needed. Why yell "wooo hooo" when your sports team scores? Why not yell, "I am most excited now". Why say "mmmmmmhhhhhh" when eating a delicious brownie? Why not say, "This brownie is delicious". Why write a poem for a loved one when you could just say what you feel? Why is there a song thay says "Zip-A-Dee-Doo-Dah, Zip-A-Dee-Day"? Well, of course the reasons for these expressions and non language utterances is because sometimes English does not suffice. Sometimes we need to step out of or beyond our language to express what we feel. Tongues, or jublition, is in many ways a gift of the Holy Spirit to help us step beyond our normal language oriented brain and into a realm of expressive thanksgiving.  Because it is a gift and allows us to make this step, it is a wonderful tool for praising God, which noted earlier is "our duty and our salvation".
 </p>
 
 </div><!--end beyond words collapsible-->
@@ -2124,7 +2121,7 @@ Why do couple's kiss or hold hands? Why don't they just say "I love you". Kissin
 	<div data-role="collapsible">
 	<h3>How to Pray in Tongues</h3>
 <p>
-Suppose you've never prayed in tongues and would like to give it a try. First, acknowledge that you'd like to receive the gift of tongues for persponal praise and thanksgiving (jubilation). Focus on giving God thanks and praise and ask for the gift of tongues to help you praise more. 
+First, acknowledge that you'd like to receive the gift of tongues for persponal praise and thanksgiving (jubilation). Focus on giving God thanks and praise and ask for the gift of tongues to help you praise more. 
 </p>
 
 <p>
@@ -2145,10 +2142,10 @@ By making some noises, you are stepping out in faith and giving the Holy Spirit 
 </p>
 
 <p>
-You may find the Holy Spirit helping you right away and your tongue will beging to move quickly, almost as if you are not realy controlling it. You might have a tingling sensatino on your throat or in your mouth which seems to indicate to you that the Holy Spirit is very present. It is also possible that after asking for the gift that you do not receive the gift of tongues. This is okay. Many people have received the gift at an unexpected time later in the day or week. Some wake up in the middle of the night and find themselves praying in tongues. The important thing is that you desire to give God thanks and praise and that you've asked for the gift and tried to pray in tongues on your own. You can repeat this process daily if you'd like. 
+You may find the Holy Spirit helping you right away and your tongue will beging to move quickly, almost as if you are not realy controlling it. You might have a tingling sensatiom on your throat or in your mouth which seems to indicate to you that the Holy Spirit is very present. It is also possible that after asking for the gift that you do not receive the gift of tongues. This is okay. Many people have received the gift at an unexpected time later in the day or week. Some wake up in the middle of the night and find themselves praying in tongues. The important thing is that you desire to give God thanks and praise and that you've asked for the gift and tried to pray in tongues on your own. You can repeat this process daily if you'd like. 
 </p>
 
-<p>The majority of people who ask for and pray for the gift of tongues do end of up receiving it. However, as noted above, praying in tongues is not required for being Catholic. It does not mean you are any more or elss holy if you pray in tongues. In fact it is a gift to help us because we are so bad at praying on our own. No one who prays in tongues should ever pressure or tease someone who does not have the gift. On the other hand, those without the gift should not be too quick to make up excuses for why they have not tried or opened themselves up to the gift. Many times excuses are made not because a someone is afraid of praying in tongues, but because they are afraid of surrendering their entire life to God. They figure that if the Holy Spirit begins to take over their prayer life, then He might want to take over the rest of their lives. They prefer a type of relationship with God in which they are in the driver's seat. Tongues is an outward sign that prayer is a two-way street and that religion is a relationship and not only a routine. Sometimes this reminder can be hard to swallow. </p>
+<p>The majority of people who ask for and pray for the gift of tongues do end of up receiving it. However, as noted above, praying in tongues is not required for being Catholic. It does not mean you are any more or elss holy if you pray in tongues. In fact, because tongues is a gift to help us because we are so bad at praying on our own. No one who prays in tongues should ever pressure or tease someone who does not have the gift. On the other hand, those without the gift should not be too quick to make up excuses for why they have not tried or opened themselves up to the gift. Many times excuses are made not because someone is afraid of praying in tongues, but because they are afraid of surrendering their entire life to God. They conclude that if the Holy Spirit begins to take over their prayer life, then He might want to take over the rest of their lives. Tongues is an outward sign that prayer is a two-way street.</p>
 
 
 <blockquote>

@@ -113,8 +113,12 @@ blockquote {background-color:#e9e9eb; padding:15px; color:#333333; margin:0px; p
 .external h2 {margin:0px 0px 0px 0px !important; padding:0 !Important; }
 
 
-.box {background-color:#eeeeee; padding:12px; overflows:hidden; margin:1em 0 0 0; float:left; height:auto; vertical-align:top;  }
-.box h2 {margin:-20px 0px 0px 0px; }
+.box {background-color:#eeeeee; padding:12px; overflows:hidden; margin:1em 0 0 0; float:left; height:auto; vertical-align:top; width:95%;}
+
+.boxxx p, .box a {font-size:15px; !Important; }
+
+.box h2 {margin:5px 0px 0px 0px !important;}
 .box img {display:block; float:left; width:30%; margin:0 1em 0em 0; }
 
+.stores img {width:25%; margin:0 5% 5% 0; display:block; float:left; }
 
