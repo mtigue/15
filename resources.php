@@ -4,8 +4,6 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
-<meta http-equiv="refresh" content="500" url="http://www.web4uonline.com/adorationapp/15/resources.php"/> 
-
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -16,7 +14,7 @@
 
 <!----css----->
 	
-	<link rel="stylesheet" href="css/web4u.css" />
+	<link rel="stylesheet" href="15/css/web4u.css" />
 
 	
 	

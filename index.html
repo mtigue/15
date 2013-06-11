@@ -11,6 +11,11 @@
 <!------>
 
 
+<!------ FUNCTIONS FOR JSON EMBEDS -- mostly buttons ------->
+ <script src="http://web4uonline.com/adorationapp/functions.js"></script>
+
+
+
 
 <!--------------------------------------FOR PUSH------------------------------------->
 	
@@ -243,7 +248,7 @@
 
 
 <!----------------------------page one------------------------------------------------>
-<div data-role="page" id="nav" data-theme="b" data-add-back-btn="true" style="background-colors:#000000; 
+<div data-role="page" id="home" data-theme="b" data-add-back-btn="false" style="background-colors:#000000; 
 
 
 " >
@@ -297,25 +302,6 @@ window.open('http://www.web4uonline.com/resources.php', '_external');
 	
 </ul>
 		
-		
-<script>
-function openL()
-{
-window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
-                                        { showLocationBar: true });
- }
-
- </script>
-		
-
-
-<script>
-function openA()
-{
-window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
-                                       { showAddress: true });
-}
- </script>
 
 
 
@@ -337,7 +323,7 @@ window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp
 
 
 <!-----old home page------------------->
-<div data-role="page" id="home" data-theme="" data-add-back-btn="true" style="background-colors:#000000; 
+<div data-role="page" id="home-old" data-theme="" data-add-back-btn="true" style="background-colors:#000000; 
 
 background-image:url('images/5.jpg'); 
 ackground-repeat:no-repeat center center fixed !important; 
@@ -367,7 +353,7 @@ ackground-repeat:no-repeat center center fixed !important;
 
 
 <div style="position:absolute; bottom:20px; width:90%;">
-<a href="#nav" data-theme="e" data-role="button" data-prefetch="true" data-icon="gear" data-corners="false" data-theme="e">Get Started</a>
+<a href="#nav" data-theme="b" data-role="button" data-prefetch="true" data-icon="gear" data-corners="true" data-theme="b">Get Started</a>
 </div>
 
 
@@ -413,9 +399,9 @@ ackground-repeat:no-repeat center center fixed !important;
 
 
 <!---------page content here---------------->
-<div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+<div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-corners="true">
 
-	<div data-role="collapsible" data-theme="b">
+	<div data-role="collapsible" data-theme="b" data-corners="true">
 	<h3>About the Eucharist</h3>
 	
 	
@@ -572,7 +558,7 @@ The Council of Trent also made it clear that Jesus could be worshipped and adore
 <!---------------------intro page---->
 
 
-<div data-role="page" id="expo" data-theme="e" data-add-back-btn="true" data-add-home-btn="true">
+<div data-role="page" id="expo" data-theme="b" data-add-back-btn="true" data-add-home-btn="true">
 
 	<div data-role="header" data-theme="b">
 		<h1>Exposition/Reposition</h1>
@@ -824,7 +810,7 @@ Amen.
 <!---------------------intro page---->
 
 
-<div data-role="page" id="repo" data-theme="e" data-add-back-btn="true" data-add-home-btn="true">
+<div data-role="page" id="repo" data-theme="b" data-add-back-btn="true" data-add-home-btn="true">
 
 	<div data-role="header" data-theme="b">
 		<h1>Reposition</h1>
@@ -1074,7 +1060,7 @@ While we own the mystery.
 <!---------------------intro page---->
 
 
-<div data-role="page" id="prayers" data-theme="e" data-add-back-btn="true" data-add-home-btn="true">
+<div data-role="page" id="prayers" data-theme="b" data-add-back-btn="true" data-add-home-btn="true">
 
 	<div data-role="header" data-theme="b">
 		<h1>Prayers</h1>
@@ -1552,7 +1538,7 @@ It is by dying that one awakens to Eternal Life.
 <!---------------------intro page---->
 
 
-<div data-role="page" id="praise" data-theme="e" data-add-back-btn="true" data-add-home-btn="true">
+<div data-role="page" id="praise" data-theme="b" data-add-back-btn="true" data-add-home-btn="true">
 
 	<div data-role="header" data-theme="b">
 		<h1>Praise</h1>
@@ -2382,7 +2368,7 @@ Make a list of everything for whith you are grateful.
 <div data-role="page" id="resources" data-theme="b" data-add-back-btn="true" data-add-home-btn="true">
 
 	<div data-role="header" data-theme="b">
-		<h1>More</h1>
+		<h1>More & Messages</h1>
 		<a href="index.html" data-icon="home" class="ui-btn-right">Home</a>
 
 	</div><!-- /header -->
@@ -2390,75 +2376,53 @@ Make a list of everything for whith you are grateful.
 	<div data-role="content" class="content">	
 	
 	
-<!-----------------------------------open window JS--------------------------------->
+	
+	
+	
+	
+
+
+
+
+
+	
+
+
+	
+	
+<!----------------------AJAX REQUEST AND DISPLAY--------------------->
 
 <script>
-function open_win()
-{
-window.open("http://www.w3schools.com")
+
+function getMore() { 
+
+ $.ajax({
+  type: "GET",
+  timeout: 6000,
+  cache: false, 	
+  url: "http://web4uonline.com/adorationapp/more.php",
+//  data: "", 
+   dataType: "json",
+  success: function(more) 
+  {
+ document.getElementById("resultsMore").innerHTML=more.more;  
+  }
+  
+  
+});
+
 }
-</script>
 
+</script>  
 
+<!-------AJAX END----->
 
-<script>
-function openPG()
-{
-window.open('http://phonegap.com/', '_system');
+<button onclick="getMore()" value="Update More">Update More & Messages</button>
+<script type="text/javascript">getMore();</script>
 
- }
- 
- </script>
-
-
-<script>
-function openW()
-{
-window.open('http://web4uonline.com/', '_system');
-
- }
- 
- </script>
-
-
-<script>
-function openN()
-{
-window.plugins.childBrowser.showWebPage('http://www.web4uonline.com/adorationapp/15/resources.php',
-                                       { showNavigationBar: true }    );
-}
- </script>
-	
-	
-	
-	
-
-
-<a style="text-align:left;" href="" data-role="button" onclick="openN()" data-corners="false" data-theme="e" class="show-page-loading-msg" data-rounded="false" data-prefetch data-textonly="false" data-icon="arrow-r" data-textvisible="false" data-msgtext="">Similar Apps</a>
-
-
-
-<div data-role="collapsible-set" data-theme="b" data-content-theme="b">
-
-
-
-
-
-	<div data-role="collapsible" data-theme="b" data-collapsed="true">
-	
-
-	<h3>News & Messages</h3>
-	
-	
-
-
-
-<iframe id="resources" name="resources" height="10000px" width="100%" scrolling="no"  frameBorder="0" style="border:0px;" allowtransparancy="true" onload="scrolltotop()"  src="http://www.web4uonline.com/adorationapp/15/messages.php"></iframe>
+  <div id="resultsMore">getting data...internet connection required</div> 
 
 	
-	</div>
-
-</div>
 
 
 
@@ -2550,14 +2514,14 @@ window.plugins.childBrowser.showWebPage('http://www.amazon.com/gp/product/B00BHM
 <div class="stores" style="height:100%; margin-bottom:20%;">	
 		
 		
-		<img src="images/itunes.png" style="border:0px;" onclick="itunes()"/>
+		<img src="images/itunes.png" style="border:0px;" onclick="confessionItunes()"/>
 		
 		
 		
-		<img src="images/play.png" style="border:0px;" onclick="play()"/>
+		<img src="images/play.png" style="border:0px;" onclick="confessionPlay()"/>
 	
 			
-		<img src="images/amazon.png" style="border:0px;" onclick="amazon()"/>
+		<img src="images/amazon.png" style="border:0px;" onclick="confessionAmazon()"/>
 
 
 
