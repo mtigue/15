@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.web4uonline.myadorationpal"
         version   = "1.0.0">
-    <name>My Adoration Pal: Catholic</name> 
+    <name>MyAdorationPal</name> 
 
     <description>
    MyAdorationPal is your companion for Eucharistic Adoraiton in the Catholic Tradition.  
